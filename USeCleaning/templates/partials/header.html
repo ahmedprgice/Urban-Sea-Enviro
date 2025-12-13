@@ -1,0 +1,68 @@
+{% load static %}
+
+<!-- TOP INFO BAR -->
+<div class="top-info-bar fade-in">
+    <div class="container top-info-content">
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61550923852132" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/urbansea.enviro/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/urban-sea-enviro-sdn-bhd/about/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="info-items">
+            <span><i class="fa fa-phone"></i> +60 194949697</span>
+            <div class="divider"></div>
+            <span><i class="fa fa-envelope"></i> Urbanseal5@gmail.com</span>
+            <div class="divider"></div>
+            <span><i class="fa fa-clock"></i> Sunday–Friday 9:00am–10pm</span>
+        </div>
+
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar fade-in">
+    <div class="container nav-content">
+
+        <div class="logo">USE Cleaning</div>
+
+        <nav class="main-nav">
+
+            <a href="{% url 'home' %}">Home</a>
+
+            <!-- BRANDS DROPDOWN -->
+            <div class="nav-item dropdown">
+               <a href="#" class="dropdown-toggle">
+    Brands <i class="fa-solid fa-chevron-down nav-arrow"></i>
+</a>
+
+
+                <div class="dropdown-menu brands-dropdown">
+
+<a href="{% url 'USeCleaning' %}" >
+    USE Cleaning
+</a>
+           <a >       
+    USE Nutirition 
+</a>
+                 <a >
+    USE Merchendise
+</a>
+                </div>
+            </div>
+
+            <a href="{% url 'about' %}">About</a>
+
+        </nav>
+
+        <a href="{% url 'booking' %}" class="btn-service">Book Now</a>
+
+    </div>
+</header>

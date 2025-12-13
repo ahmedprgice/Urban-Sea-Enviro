@@ -1,0 +1,279 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | USE Cleaning</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/Universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+
+<body>
+
+<!-- HEADER -->
+{% include "partials/header.html" %}
+
+<!-- PAGE HEADER -->
+<section class="page-header fade-in">
+    <div class="container">
+        <h1 class="page-title">About Us</h1>
+        <p class="breadcrumb">Home <span>›</span> About Us</p>
+    </div>
+</section>
+
+<!-- COMPANY OVERVIEW -->
+<section class="company-overview fade-in">
+    <div class="container overview-grid">
+
+        <!-- TEXT -->
+        <div class="overview-text">
+            <h2>Company Overview</h2>
+
+            <p class="overview-intro">
+                Urban Sea Enviro Sdn Bhd is a fast-growing, multi-division brand that integrates
+                cleaning excellence, product innovation, healthy living, and technology into
+                one unified ecosystem.
+            </p>
+
+            <p class="overview-desc">
+                We serve both individuals and businesses by providing trusted cleaning services,
+                eco-friendly products, cold-pressed juices, and lifestyle offerings — all under one roof.
+            </p>
+
+            <ul class="overview-list">
+                <li>Residential Cleaning Services Near You!</li>
+                <li>Commercial Cleaning Service In Australia.</li>
+            </ul>
+
+            <a href="{% url 'booking' %}" class="btn-service">Book A Cleaner</a>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+<!-- OUR STORY -->
+<section class="our-story fade-in">
+    <div class="container">
+        <h2>Our Story</h2>
+
+        <p>
+            Urban Sea Enviro began in 2022 with a clear mission: to provide eco-friendly cleaning
+            services that truly make a difference.
+        </p>
+
+        <p>
+            Our team, formed by professionals from aviation, construction, and sports science,
+            identified the growing demand for sustainable, high-quality cleaning solutions.
+        </p>
+
+        <p>
+            Today, Urban Sea Enviro offers housekeeping, upholstery care, and eco-focused services
+            that create cleaner, healthier spaces while protecting our planet.
+        </p>
+    </div>
+</section>
+<!-- MISSION / VISION / VALUES -->
+<section class="mvv-section fade-in">
+    <div class="container mvv-layout">
+
+        <!-- LEFT IMAGE -->
+        <div class="mvv-left">
+            <img src="{% static 'img/mission.jpg' %}" alt="Mission Vision Values">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="mvv-right">
+            <h2>Our Mission, Vision, and Values</h2>
+
+            <div class="mvv-row">
+                <div class="mvv-box">
+                    <span class="mvv-label">Mission</span>
+                    <p>
+                        To deliver professional cleaning services, eco-conscious products,
+                        and wellness solutions that improve life at home, at work, and in
+                        the community.
+                    </p>
+                </div>
+
+                <div class="mvv-box">
+                    <span class="mvv-label">Vision</span>
+                    <p>
+                        To deliver professional cleaning services, eco-conscious products,
+                        and wellness solutions that improve life at home, at work, and in
+                        the community.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mvv-box mvv-full">
+                <span class="mvv-label">Values</span>
+                <p>
+                    Integrity, sustainability, innovation, and customer satisfaction guide
+                    everything we do. We believe in responsible growth and meaningful impact.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery-section fade-in">
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="gallery-header">
+            <h2>Gallery</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut in sumo ad placerat cursus disponsere negotium online, includens
+            </p>
+        </div>
+
+        <!-- GRID -->
+        <div class="gallery-grid">
+
+            <!-- ITEM -->
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Gallery Image">
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="programs-section fade-in">
+    <div class="container">
+
+        <!-- SECTION HEADER -->
+        <div class="programs-header">
+            <h2>Keep your vision to our latest<br>programs.</h2>
+            <p>
+                Awesome site on the top advertising a business online includes<br>
+                assembling having the most keep.
+            </p>
+        </div>
+
+        <!-- PROGRAM ITEM -->
+        <div class="program-item">
+            <div class="program-image">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Licensing Program">
+            </div>
+
+            <div class="program-content">
+                <h3>Join the Urban Sea Enviro Licensing Program</h3>
+                <p>
+                    Become a part of the Urban Sea Enviro family by joining our licensing program.
+                    As a licensee, you’ll have the opportunity to offer our signature cleaning services
+                    and solutions in your community, backed by our proven business model and operational expertise.
+                </p>
+                <a href="#" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+        <!-- PROGRAM ITEM -->
+        <div class="program-item">
+            <div class="program-image">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="E-Hailing Program">
+            </div>
+
+            <div class="program-content">
+                <h3>E-Hailing Driver Partner Program</h3>
+                <p>
+                    Our E-Hailing Driver Partner Program offers e-hailing drivers a unique opportunity
+                    to earn extra income by promoting Urban Sea Enviro’s premium cleaning services.
+                    Drivers can easily refer customers and enjoy exclusive discounts.
+                </p>
+                <a href="#" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+        <!-- PROGRAM ITEM -->
+        <div class="program-item">
+            <div class="program-image">
+                <img src="{% static 'img/gallery1.jpg' %}" alt="Pet Ambassador Program">
+            </div>
+
+            <div class="program-content">
+                <h3>Pet Ambassador Program</h3>
+                <p>
+                    Our Pet Ambassador Program allows pet lovers to earn rewards by promoting
+                    Urban Sea Enviro’s pet-friendly cleaning services. Ambassadors simply share
+                    their unique referral codes and enjoy exclusive benefits.
+                </p>
+                <a href="#" class="btn-service">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+{% include "partials/footer.html" %}
+
+<!-- FADE-IN SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+</body>
+</html>

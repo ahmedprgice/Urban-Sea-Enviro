@@ -1,0 +1,381 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USE Cleaning</title>
+
+    <!-- Font Awesome (One link only) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Brand Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'css/Universal.css' %}">
+</head>
+
+<body>
+
+
+{% include "partials/header.html" %}
+
+<!-- PAGE HEADER -->
+<section class="page-header fade-in">
+    <div class="container">
+        <h1 class="page-title">USE Cleaning</h1>
+        <p class="breadcrumb">Home <span>›</span> USE Cleaning</p>
+    </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero fade-in">
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+            <h1 style="color: #20ba68;">USE Cleaning</h1>
+            <h1 style="margin-top: 0;">Cleaning Made Easy!</h1>
+            <p>
+                USE Cleaning brings high-performance cleaning to your home or business. 
+                From deep cleaning to upholstery, floor care, and pressure washing, our trained team ensures 
+                every corner shines.
+            </p>
+
+           <a href="{% url 'booking' %}" class="btn-service">Book Now</a>
+
+            <button class="btn-primary-outline">About Us</button>
+        </div>
+
+        <div class="hero-img zoom-hover">
+            <img src="{% static 'img/Hero.png' %}" alt="Cleaning Image">
+        </div>
+
+    </div>
+</section>
+
+<!-- WHAT WE OFFER -->
+<section class="offering-section fade-in">
+    <div class="container">
+        <h2 class="section-title">WHAT WE ARE OFFERING</h2>
+
+        <div class="offering-grid">
+
+            <div class="offering-card card-hover">
+                <div class="offering-icon">
+                    <img src="{% static 'img/contract.jpg' %}" alt="">
+                </div>
+                <h3>Contractual Cleaning Services (B2B)</h3>
+                <p>Professional long-term cleaning solutions for condominiums, corporate offices, commercial buildings, and industrial facilities. 
+                    Our trained team manages daily, weekly, or monthly schedules to maintain hygiene, 
+                    spotless common areas, and a consistently well-kept environment.</p>
+            </div>
+
+            <div class="offering-card active card-hover">
+                <div class="offering-icon">
+                    <img src="{% static 'img/contract.jpg' %}" alt="">
+                </div>
+                <h3>General Cleaning Services (B2B & B2C)</h3>
+                <p>Comprehensive cleaning for homes, offices, and retail spaces. 
+                    This includes sweeping, mopping, dusting, wipe-downs, window cleaning, and basic sanitation. 
+                    Ideal for maintaining clean, fresh, and healthy spaces with flexible booking options.
+</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BEST SERVICES -->
+<section class="best-services fade-in">
+    <div class="container">
+
+        <div class="services-header">
+            <h2 class="services-title">We Always Provide<br>The Best Service</h2>
+
+            <div class="services-info">
+                <h4>Services</h4>
+                <p>Most clients schedule regular cleaning services according to their needs.</p>
+            </div>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card card-hover">
+                <div class="img-container zoom-hover"><img src="{% static 'img/facade.jpg' %}" /></div>
+                <h3>Post-Renovation Cleaning</h3>
+                <p>Deep cleaning solution designed to remove cement residue, dust, paint drops, grout haze, and construction debris after renovation works. We ensure your property becomes move-in ready with sparkling surfaces and professional finishing.</p>
+ <a href="{% url 'booking' %}" class="btn-service">Book Now</a>
+            </div>
+
+            <div class="service-card card-hover">
+                <div class="img-container zoom-hover"><img src="{% static 'img/facade.jpg' %}" /></div>
+                <h3>Upholstery Deep Cleaning</h3>
+                <p>Deep cleaning solution designed to remove cement residue, dust, paint drops, grout haze, and construction debris after renovation works. We ensure your property becomes move-in ready with sparkling surfaces and professional finishing.</p>
+<a href="{% url 'booking' %}" class="btn-primary">Book Now</a>
+            </div>
+
+            <div class="service-card card-hover">
+                <div class="img-container zoom-hover"><img src="{% static 'img/facade.jpg' %}" /></div>
+                <h3>Pressure Washing Services</h3>
+                <p>Deep cleaning solution designed to remove cement residue, dust, paint drops, grout haze, and construction debris after renovation works. We ensure your property becomes move-in ready with sparkling surfaces and professional finishing.</p>
+<a href="{% url 'booking' %}" class="btn-primary">Book Now</a>
+            </div>
+            <div class="service-card card-hover">
+                <div class="img-container zoom-hover"><img src="{% static 'img/facade.jpg' %}" /></div>
+                <h3>Pressure Washing Services</h3>
+                <p>Deep cleaning solution designed to remove cement residue, dust, paint drops, grout haze, and construction debris after renovation works. We ensure your property becomes move-in ready with sparkling surfaces and professional finishing.</p>
+<a href="{% url 'booking' %}" class="btn-primary">Book Now</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section class="pricing-section fade-in">
+    <div class="pricing-bg"></div>
+
+    <div class="container">
+        <h2 class="pricing-title">Our Pricing</h2>
+
+        <div class="pricing-cards">
+
+            <div class="pricing-card card-hover">
+                <h3>Commercial</h3>
+                <h1>RM20 <span>/ Month</span></h1>
+                <ul>
+                    <li>Unlimited Access Courses</li>
+                    <li>Certificate After Completion</li>
+                    <li>High Resolution Videos</li>
+                    <li>24/7 Dedicated Support</li>
+                </ul>
+                <a href="#" class="pricing-btn">Get Now →</a>
+            </div>
+
+            <div class="pricing-card card-hover">
+                <h3>Commercial</h3>
+                <h1>RM20 <span>/ Month</span></h1>
+                <ul>
+                    <li>Unlimited Access Courses</li>
+                    <li>Certificate After Completion</li>
+                    <li>High Resolution Videos</li>
+                    <li>24/7 Dedicated Support</li>
+                </ul>
+                <a href="#" class="pricing-btn active-btn">Get Now →</a>
+            </div>
+
+            <div class="pricing-card card-hover">
+                <h3>Personal</h3>
+                <h1>RM60 <span>/ Month</span></h1>
+                <ul>
+                    <li>Unlimited Access Courses</li>
+                    <li>Certificate After Completion</li>
+                    <li>High Resolution Videos</li>
+                    <li>24/7 Dedicated Support</li>
+                </ul>
+                <a href="#" class="pricing-btn">Get Now →</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section fade-in">
+    <div class="container testimonial-wrapper">
+
+        <div class="testimonial-left">
+            <h2>Feedback About Customers<br>Experience With Us</h2>
+            <p>See what our satisfied customers say about our services.</p>
+
+            <div class="testimonial-arrows">
+                <button class="arrow-btn">&#8592;</button>
+                <button class="arrow-btn active">&#8594;</button>
+            </div>
+        </div>
+
+        <div class="testimonial-card card-hover">
+<div class="testimonial-icon">
+    <i class="fa-solid fa-user"></i>
+</div>
+
+            <div class="testimonial-content">
+                <h3>Robert Fox</h3>
+                <span class="testimonial-role">Businessman</span>
+
+                <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+
+                <p class="testimonial-text">
+                    Excellent service! The team was punctual, thorough, and left my home sparkling clean.
+                </p>
+
+                <div class="testimonial-quote">❞❞</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission-section fade-in">
+    <div class="container">
+
+        <h2 class="mission-title">Our Mission</h2>
+        <p class="mission-text">
+            To deliver exceptional cleaning services while promoting sustainable practices in our community.
+        </p>
+
+        <div class="mission-stats">
+           <div class="mission-card card-hover">
+    <h3 class="counter" data-target="100">0</h3>
+    <p>Satisfaction Rate</p>
+</div>
+
+<div class="mission-card card-hover">
+    <h3 class="counter" data-target="5000">0</h3>
+    <p>Happy Customers</p>
+</div>
+
+<div class="mission-card card-hover">
+    <h3 class="counter" data-target="50">0</h3>
+    <p>Team Members</p>
+</div>
+  </div>
+
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section fade-in">
+    <div class="container faq-container">
+
+        <!-- LEFT SIDE TEXT + FAQ LIST -->
+        <div>
+            <p class="faq-subtitle">FREQUENTLY ASKED QUESTION</p>
+            <h2 class="faq-title">We Always Provide The Best Service</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+    <div class="faq-question">
+How long does a cleaning service usually take?        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="faq-answer">
+The duration depends on the size of the space and the type of service. General cleaning usually takes less time, while deep cleaning or post-renovation cleaning requires more time.    </div>
+</div>
+
+
+                <div class="faq-item">
+    <div class="faq-question">
+        Do I need to be home for every cleaning service?
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="faq-answer">
+No, you don’t need to be home. You can provide access instructions in advance, and our trained team will clean your space professionally and securely.    </div>
+</div>
+
+
+                           <div class="faq-item">
+    <div class="faq-question">
+What is the difference between general cleaning and deep cleaning?        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="faq-answer">
+General cleaning focuses on regular maintenance to keep your space clean, tidy, and hygienic. It includes tasks like sweeping and mopping floors, dusting surfaces, wiping countertops, and basic bathroom and kitchen cleaning. It’s ideal for weekly or routine cleaning.
+
+Deep cleaning is a more thorough and detailed service that targets hidden dirt, grease, and buildup that regular cleaning doesn’t cover. It includes cleaning behind and under furniture, scrubbing tiles and grout, deep bathroom sanitization, removing grease from kitchen areas, and cleaning hard-to-reach spots. It’s best for first-time cleanings, move-in/move-out, post-renovation, or spaces that haven’t been cleaned for a long time.    </div>
+</div>
+</div>
+
+
+
+            <br>
+            <button class="btn-primary">VIEW ALL FAQ</button>
+        </div>
+
+        <!-- RIGHT SIDE IMAGES -->
+        <div class="faq-images">
+            <img src="{% static 'img/faq-big.png' %}" class="faq-img-large">
+            <img src="{% static 'img/faq-big.png' %}" class="faq-img-small">
+
+            <!-- Green sparkles -->
+            <div class="sparkle s1">✦</div>
+            <div class="sparkle s2">✦</div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+{% include "partials/footer.html" %}
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+});
+
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".counter");
+    let started = false;
+
+    const startCount = () => {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute("data-target");
+            const duration = 2000; // animation time in ms
+            const increment = target / (duration / 16);
+
+            let count = 0;
+
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target + "+";
+                }
+            };
+
+            updateCount();
+        });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !started) {
+                started = true;
+                startCount();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(document.querySelector(".mission-section"));
+});
+</script>
+
+<script>
+document.querySelectorAll(".faq-item").forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("active");
+    });
+});
+</script>
+
+</body>
+</html>

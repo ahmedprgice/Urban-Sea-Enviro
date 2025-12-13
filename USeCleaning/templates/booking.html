@@ -1,0 +1,167 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USE Cleaning</title>
+
+    <!-- Font Awesome (One link only) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Brand Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/booking.css' %}">
+      <link rel="stylesheet" href="{% static 'css/Universal.css' %}">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+{% include "partials/header.html" %}
+
+
+<!-- PAGE HEADER -->
+<section class="page-header fade-in">
+    <div class="container">
+        <h1 class="page-title">Book Now</h1>
+        <p class="breadcrumb">USe Cleaning <span>›</span> USE Cleaning</p>
+    </div>
+</section>
+
+<!-- MAIN BOOKING SECTION -->
+<section class="booking-section">
+    <div class="container booking-grid">
+
+        <!-- FORM CARD -->
+        <div class="card booking-form">
+
+            <h2>Book Your Cleaning Service</h2>
+            <p class="subtitle">Fill in the details below and we’ll take care of the rest!</p>
+
+        <form method="POST" action="{% url 'booking' %}">
+    {% csrf_token %}
+
+    <!-- Service Type -->
+    <label>Service Type</label>
+    <select name="service_type" required>
+        <option value="">Select a service</option>
+        <option value="deep_cleaning">Deep Cleaning</option>
+        <option value="move_in_out">Move-in / Move-out</option>
+        <option value="floor_care">Floor Care</option>
+    </select>
+
+    <!-- Rooms + Bathrooms -->
+    <div class="form-row">
+        <div class="form-group">
+            <label>Number of Rooms *</label>
+            <input type="number" name="rooms" min="1" value="2" required>
+        </div>
+
+        <div class="form-group">
+            <label>Number of Bathrooms *</label>
+            <input type="number" name="bathrooms" min="1" value="1" required>
+        </div>
+    </div>
+
+    <!-- Date -->
+    <label>Preferred Date</label>
+    <input type="date" name="date" required>
+
+    <!-- Time -->
+    <label>Preferred Time</label>
+    <select name="time" required>
+        <option value="">Select Time</option>
+        <option value="09:00">9:00 AM</option>
+        <option value="13:00">1:00 PM</option>
+        <option value="16:00">4:00 PM</option>
+    </select>
+
+    <!-- Address -->
+  <label for="address">Service Address</label>
+<textarea
+    id="address"
+    name="address"
+    rows="3"
+    placeholder="House number, street name, area, city, postcode"
+    required>
+</textarea>
+
+    <button type="submit" class="confirm-btn">Confirm Booking</button>
+</form>
+
+
+        </div>
+
+        <!-- SUMMARY CARD -->
+        <div class="card booking-summary">
+    <h3>Booking Summary</h3>
+
+    <div class="summary-row">
+        <span>Rooms</span>
+        <span id="summary-rooms">0</span>
+    </div>
+
+    <div class="summary-row">
+        <span>Bathrooms</span>
+        <span id="summary-bathrooms">0</span>
+    </div>
+
+    <hr class="divider">
+
+    <div class="summary-row total">
+        <span>Total</span>
+        <span id="summary-total">RM0</span>
+    </div>
+
+    <p class="confirmation-text">
+        You will receive a confirmation email after booking.
+    </p>
+</div>
+
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+{% include "partials/footer.html" %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const roomsInput = document.querySelector('input[name="rooms"]');
+    const bathroomsInput = document.querySelector('input[name="bathrooms"]');
+    const serviceInput = document.querySelector('select[name="service_type"]');
+
+    const summaryRooms = document.getElementById("summary-rooms");
+    const summaryBathrooms = document.getElementById("summary-bathrooms");
+    const summaryTotal = document.getElementById("summary-total");
+
+    function calculateTotal() {
+        const rooms = parseInt(roomsInput.value) || 0;
+        const bathrooms = parseInt(bathroomsInput.value) || 0;
+        const service = serviceInput.value;
+
+        let basePrice = 0;
+
+        if (service === "deep_cleaning") basePrice = 80;
+        if (service === "move_in_out") basePrice = 120;
+        if (service === "floor_care") basePrice = 60;
+
+        const total = basePrice + (rooms * 20) + (bathrooms * 15);
+
+        summaryRooms.textContent = rooms;
+        summaryBathrooms.textContent = bathrooms;
+        summaryTotal.textContent = `RM${total}`;
+    }
+
+    roomsInput.addEventListener("input", calculateTotal);
+    bathroomsInput.addEventListener("input", calculateTotal);
+    serviceInput.addEventListener("change", calculateTotal);
+});
+</script>
+
+</body>
+</html>
