@@ -1,0 +1,469 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USe Nutrition</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/Universal2.css' %}">
+    <link rel="stylesheet" href="{% static 'css/useNutrition.css' %}">
+
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    {% include "partials/header2.html" %}
+    <section class="page-header fade-in">
+        <div class="container">
+            <h1 class="page-title">USE Nutrition</h1>
+            <p class="breadcrumb">Brands <span>›</span> USE Nutrition</p>
+        </div>
+    </section>
+    <!-- HERO SECTION -->
+    <section class="nutrition-hero fade-in">
+        <div class="container hero-grid">
+
+            <!-- LEFT CONTENT -->
+            <div class="hero-text">
+
+                <div class="hero-badge">
+                    <i class="fa-solid fa-leaf"></i> 100% Organic & Fresh
+                </div>
+
+                <div class="hero-mini-badge">
+                    JF <span>Juice Fresh</span>
+                </div>
+
+                <h1>Sip Nature's Best</h1>
+
+                <p>
+                    Experience the purest nutrition with our cold-pressed juices.
+                    No heat, no oxidation—just pure, living nutrients in every bottle.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Order Now</a>
+<a href="#signature-juices" class="btn-primary-outline">View Menu</a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="hero-image">
+                <img src="{% static '/img/image.png' %}" alt="Cold Pressed Juices">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SIGNATURE JUICES -->
+<section id="signature-juices" class="signature-juices fade-in">
+
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Our Signature Juices</h2>
+                <p>
+                    Handcrafted blends of the finest organic fruits and vegetables,
+                    cold-pressed to preserve maximum nutrients and flavor.
+                </p>
+            </div>
+
+            <div class="juice-grid">
+
+                <!-- CARD 1 -->
+                <div class="juice-card">
+                    <img src="{% static 'img/juice1.png' %}" alt="Green Vitality">
+                    <div class="juice-content">
+                        <h4>Green Vitality</h4>
+                        <div class="tags">
+                            <span>Kale</span><span>Spinach</span><span>Apple</span><span>Lemon</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$8.9</span>
+                            <a class="btn-cart"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="juice-card">
+                    <img src="{% static 'img/juice1.png' %}" alt="Sunrise Glow">
+                    <div class="juice-content">
+                        <h4>Sunrise Glow</h4>
+                        <div class="tags">
+                            <span>Carrot</span><span>Orange</span><span>Turmeric</span><span>Ginger</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$7.9</span>
+                            <a class="btn-cart"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="juice-card">
+                    <img src="{% static 'img/juice1.png' %}" alt="Berry Blast">
+                    <div class="juice-content">
+                        <h4>Berry Blast</h4>
+                        <div class="tags">
+                            <span>Blueberry</span><span>Raspberry</span><span>Strawberry</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$9.4</span>
+                            <a class="btn-cart"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="juice-card">
+                    <img src="{% static 'img/juice1.png' %}" alt="Tropical Paradise">
+                    <div class="juice-content">
+                        <h4>Tropical Paradise</h4>
+                        <div class="tags">
+                            <span>Mango</span><span>Pineapple</span><span>Coconut</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$8.4</span>
+                            <a class="btn-cart"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="juice-card">
+                    <img src="{% static 'img/juice1.png' %}" alt="Beet the Day">
+                    <div class="juice-content">
+                        <h4>Beet the Day</h4>
+                        <div class="tags">
+                            <span>Beet</span><span>Apple</span><span>Ginger</span><span>Lemon</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$8.9</span>
+                            <a class="btn-cart"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="juice-card">
+                    <img src="{% static 'img/juice1.png' %}" alt="Detox Divine">
+                    <div class="juice-content">
+                        <h4>Detox Divine</h4>
+                        <div class="tags">
+                            <span>Cucumber</span><span>Celery</span><span>Mint</span><span>Lime</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price">$7.4</span>
+                            <a class="btn-cart"><i class="fa fa-cart-plus"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- WHY CHOOSE USE NATURALS -->
+    <section class="why-use fade-in">
+        <div class="container why-grid">
+
+            <!-- LEFT CONTENT -->
+            <div class="why-text">
+                <h2>Why Choose USE NATURALS?</h2>
+                <p class="why-subtitle">
+                    We're committed to delivering the highest quality cold-pressed
+                    juices with uncompromising standards.
+                </p>
+
+                <div class="why-list">
+
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div>
+                            <h4>Cold-Pressed Technology</h4>
+                            <p>
+                                No heat, no oxidation. Our hydraulic press extracts
+                                maximum nutrients without destroying enzymes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h4>Instant Energy</h4>
+                            <p>
+                                Bioavailable nutrients are absorbed quickly,
+                                giving you natural energy without the crash.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div>
+                            <h4>100% Organic</h4>
+                            <p>
+                                Every ingredient is certified organic,
+                                locally sourced, and free from pesticides.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div>
+                            <h4>No Additives</h4>
+                            <p>
+                                Pure juice, nothing else. No added sugars,
+                                preservatives, or artificial ingredients.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="why-image">
+                <span class="organic-badge">100%<br>ORGANIC</span>
+                <img src="{% static 'img/juice1.png' %}" alt="Organic Fruits Bowl">
+            </div>
+
+        </div>
+    </section>
+    <!-- ABOUT USE NATURALS -->
+    <section class="about-use fade-in">
+        <div class="container">
+
+            <!-- HEADER -->
+            <div class="about-header">
+                <h2>About USE NATURALS</h2>
+                <p>
+                    We started with a simple mission: to make premium cold-pressed
+                    juices accessible to everyone. Join us on our journey.
+                </p>
+            </div>
+
+            <!-- STATS -->
+            <div class="about-stats">
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <span>Years in Business</span>
+                </div>
+                <div class="stat-box">
+                    <h3>15K+</h3>
+                    <span>Happy Customers</span>
+                </div>
+                <div class="stat-box">
+                    <h3>500+</h3>
+                    <span>Juices Served Daily</span>
+                </div>
+                <div class="stat-box">
+                    <h3>25+</h3>
+                    <span>Organic Farms</span>
+                </div>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="about-content">
+
+                <div class="about-text">
+                    <h4>Our Story</h4>
+                    <p>
+                        Founded in 2013, USE NATURALS began as a small juice bar with a
+                        big vision: to revolutionize the way people think about juice
+                        and nutrition.
+                    </p>
+                    <p>
+                        What started as a passion project quickly grew into a movement.
+                        We discovered the incredible benefits of cold-pressed juice
+                        and wanted to share them with the world. With community support,
+                        we've expanded to multiple locations and continue to inspire
+                        healthier, fresher, and more delicious choices.
+                    </p>
+                    <p>
+                        Today, we're proud to be a leader in health-conscious nutrition.
+                        Each bottle is a testament to our journey and our commitment to
+                        quality, freshness, and pure wellbeing.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img src="{% static 'img/juice1.png' %}" alt="Fresh Juice Cup">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- OUR VALUES -->
+    <section class="our-values fade-in">
+        <div class="container">
+
+            <div class="values-header">
+                <h2>Our Values</h2>
+            </div>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+                    <div class="value-icon quality">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>Quality First</h4>
+                    <p>
+                        We never compromise on quality.
+                        Every ingredient is carefully selected and cold-pressed to perfection.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon local">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h4>Locally Sourced</h4>
+                    <p>
+                        We partner with local organic farms and growers
+                        who share our commitment to sustainability.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon fresh">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <h4>Fresh Daily</h4>
+                    <p>
+                        All juices are pressed to order and delivered fresh
+                        within 24 hours for maximum nutrition.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon health">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h4>Health & Wellness</h4>
+                    <p>
+                        Your health is our mission.
+                        We’re committed to helping you live your best, healthiest life.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- GET IN TOUCH -->
+    <section class="contact-section fade-in">
+        <div class="container">
+
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>Have a question or feedback? We’d love to hear from you.</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- FORM -->
+                <div class="contact-form">
+                    <h4>Send Us a Message</h4>
+
+                    <form method="post">
+                        {% csrf_token %}
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="How can we help?">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="Tell us more..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- INFO -->
+                <div class="contact-info">
+
+                    <div class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h5>Visit Us</h5>
+                            <p>123 Juice Street<br>Los Angeles, CA 90012</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h5>Call Us</h5>
+                            <p>(555) 123-4567<br>Mon–Fri 8am–6pm PST</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p>hello@usenaturals.com<br>support@usenaturals.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h5>Store Hours</h5>
+                            <p>Mon–Fri: 7am–8pm<br>Sat–Sun: 8am–9pm</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    {% include "partials/footer.html" %}
+
+
+</body>
+
+</html>

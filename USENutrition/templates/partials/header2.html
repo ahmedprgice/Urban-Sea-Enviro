@@ -1,5 +1,20 @@
 {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/Universal2.css' %}">
+
+
+</head>
 <!-- TOP INFO BAR -->
 <div class="top-info-bar fade-in">
     <div class="container top-info-content">
@@ -15,11 +30,7 @@
                 <i class="fab fa-linkedin-in"></i>
             </a>
 
-            <!-- WhatsApp Floating Button -->
-            <a href="https://wa.me/60194949697?text=Hi%20I%20would%20like%20to%20enquire%20about%20USE%20Cleaning"
-                class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+     
 
         </div>
 
@@ -38,7 +49,7 @@
 <header class="navbar fade-in">
     <div class="container nav-content">
 
-        <div class="logo">USE Cleaning</div>
+        <div class="logo">USE Nutrition</div>
 
         <nav class="main-nav">
 
@@ -69,7 +80,14 @@
 
         </nav>
 
-        <a href="{% url 'booking' %}" class="btn-service">Book Now</a>
 
     </div>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/60194949697?text=Hi%20I%20would%20like%20to%20enquire%20about%20USE%20Nutrition"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+ 
+</a>
+
 </header>

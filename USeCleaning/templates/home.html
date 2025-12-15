@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
       <link rel="stylesheet" href="{% static 'css/Universal.css' %}">
 </head>
 
@@ -23,7 +23,367 @@
 
 {% include "partials/header.html" %}
 
+<section class="hero" style="background-color: rgb(249, 245, 245);">
+  <div class="hero-container">
 
+    <!-- Left Content -->
+    <div class="hero-content">
+      <span class="hero-pill"></span>
+
+      <h1>
+        Your Trusted Partner<br>
+        for Cleaning,<br>
+        Products &<br>
+        Sustainable Living
+      </h1>
+
+      <p>
+        Urban Sea Enviro is an integrated ecosystem of cleaning services,
+        eco-friendly products, and wellness solutions designed for
+        modern living. From professional cleaning to cold-pressed juices,
+        we bring sustainability and quality to every aspect of your life.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">
+          Book Cleaning <span>→</span>
+        </a>
+        <a href="#" class="btn btn-outline">
+          Shop Products <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img src="{% static 'img/Hero.png' %}" alt="Clean modern workspace">
+    </div>
+
+  </div>
+</section>
+
+<section class="ecosystem">
+  <div class="container">
+    <h2 class="section-title">Our Integrated Ecosystem</h2>
+    <p class="section-subtitle">
+      Urban Sea Enviro brings together multiple divisions to serve all your
+      cleaning, product, and wellness needs under one trusted brand.
+    </p>
+
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="icon blue">✨</div>
+        <h3>Urban Sea Cleaning Services</h3>
+        <p>Professional cleaning for corporate, industrial, and residential spaces</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="icon green">💧</div>
+        <h3>Petalz Cleaning Products</h3>
+        <p>Eco-friendly cleaning solutions for every need</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="icon pink">☕</div>
+        <h3>USe Naturals</h3>
+        <p>Premium cold-pressed juices for health and wellness</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="icon yellow">👜</div>
+        <h3>USe Merchandise</h3>
+        <p>Branded products and lifestyle essentials</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <span class="badge">Coming Soon</span>
+        <div class="icon grey">💻</div>
+        <h3>USe Technology</h3>
+        <p>Smart solutions for cleaning management</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services">
+  <div class="services-container">
+
+    <!-- Left Content -->
+    <div class="services-content">
+      <h2>Professional Cleaning Services</h2>
+      <p class="services-desc">
+        From corporate offices to cozy homes, our certified cleaning
+        professionals deliver exceptional results with eco-friendly
+        products and proven techniques.
+      </p>
+
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="icon">🏢</div>
+          <h4>Corporate Cleaning</h4>
+          <p>Professional office and commercial space maintenance</p>
+        </div>
+
+        <div class="service-card active">
+          <div class="icon">🏠</div>
+          <h4>Residential Cleaning</h4>
+          <p>Thorough home cleaning services you can trust</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">✨</div>
+          <h4>Deep Cleaning</h4>
+          <p>Intensive cleaning for every corner of your space</p>
+        </div>
+
+        <div class="service-card">
+          <div class="icon">🏭</div>
+          <h4>Industrial Solutions</h4>
+          <p>Specialized cleaning for industrial environments</p>
+        </div>
+      </div>
+
+      <div class="service-actions">
+        <a href="#" class="btn-primary">Get a Free Quote</a>
+        <a href="#" class="btn-outline">View All Services</a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="services-image">
+      <img src="{% static 'img/Hero.png' %}" alt="Clean modern workspace">
+
+     
+    </div>
+
+  </div>
+</section>
+<section class="products">
+  <div class="products-container">
+
+    <h2 class="products-title">Products for a Better Life</h2>
+    <p class="products-subtitle">
+      Discover our range of eco-friendly cleaning products and wellness solutions
+    </p>
+
+    <div class="products-grid">
+
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <div class="product-image">
+      <img src="{% static 'img/Hero.png' %}" alt="Clean modern workspace">
+        </div>
+
+        <div class="product-content">
+          <span class="tag tag-green">Petalz</span>
+          <h3>Eco-Friendly Cleaning Products</h3>
+          <p>
+            Professional-grade cleaning solutions that are tough on dirt
+            but gentle on the planet. Perfect for homes and businesses.
+          </p>
+
+          <a href="#" class="btn btn-green">
+            Shop Petalz <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <div class="product-image">
+      <img src="{% static 'img/Hero.png' %}" alt="Clean modern workspace">
+        </div>
+
+        <div class="product-content">
+          <span class="tag tag-pink">USe Naturals</span>
+          <h3>Cold-Pressed Juices</h3>
+          <p>
+            Fresh, nutritious, and delicious cold-pressed juices made
+            from the finest ingredients. Wellness in every bottle.
+          </p>
+
+          <a href="#" class="btn btn-pink">
+            Shop Juices <span>→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="franchise">
+  <div class="franchise-container">
+
+    <!-- Left Content -->
+    <div class="franchise-content">
+      <h2>Build Your Business with<br>Urban Sea Enviro</h2>
+
+      <p class="franchise-desc">
+        Join our growing network of franchise partners and be part of the
+        future of sustainable cleaning and lifestyle solutions. We provide
+        comprehensive training, support, and a proven business model.
+      </p>
+
+      <div class="franchise-features">
+        <div class="feature">
+          <span>✔</span>
+          <div>
+            <strong>Proven System</strong>
+            <p>Tested and refined business model</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>✔</span>
+          <div>
+            <strong>Full Training</strong>
+            <p>Comprehensive onboarding program</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>✔</span>
+          <div>
+            <strong>Marketing Support</strong>
+            <p>Brand assets and campaigns</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>✔</span>
+          <div>
+            <strong>Ongoing Support</strong>
+            <p>Dedicated franchise team</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="franchise-btn">Become a Franchise Partner</a>
+    </div>
+
+    <!-- Right Card -->
+    <div class="franchise-card">
+      <h3>Investment Opportunity</h3>
+
+      <div class="card-row">
+        <span>Initial Investment</span>
+        <strong>Flexible Options</strong>
+      </div>
+
+      <div class="card-row">
+        <span>Potential ROI</span>
+        <strong>12–18 months</strong>
+      </div>
+
+      <div class="card-row">
+        <span>Training Duration</span>
+        <strong>2–4 weeks</strong>
+      </div>
+
+      <div class="card-row">
+        <span>Territories Available</span>
+        <strong>Multiple Locations</strong>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="testimonials">
+  <div class="testimonials-container">
+
+    <h2 class="testimonials-title">Trusted by Thousands</h2>
+    <p class="testimonials-subtitle">See what our clients have to say</p>
+
+    <div class="testimonials-grid">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">
+          "Urban Sea Enviro has transformed our office cleaning. Their team is
+          professional, reliable, and eco-conscious."
+        </p>
+        <div class="author">
+          <strong>Sarah Johnson</strong>
+          <span>Facilities Manager, Tech Corp</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">
+          "The best home cleaning service I've used. They're thorough,
+          friendly, and always on time."
+        </p>
+        <div class="author">
+          <strong>Ahmad Rahman</strong>
+          <span>Homeowner</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">
+          "We love the Petalz products and their cleaning services. Everything
+          is top quality and sustainable."
+        </p>
+        <div class="author">
+          <strong>Lisa Chen</strong>
+          <span>Restaurant Owner</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="final-cta">
+  <div class="final-cta-container">
+
+    <h2>Ready to Get Started?</h2>
+    <p class="cta-subtitle">
+      Whether you need cleaning services, products, or want to explore franchise
+      opportunities, we're here to help.
+    </p>
+
+    <div class="cta-cards">
+      <!-- Card 1 -->
+      <div class="cta-card">
+        <div class="cta-icon green">✨</div>
+        <h3>Book a Cleaning</h3>
+        <p>Get professional cleaning service today</p>
+        <a href="#" class="cta-link green-link">
+          Schedule Now <span>→</span>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="cta-card">
+        <div class="cta-icon blue">💬</div>
+        <h3>Contact Us on WhatsApp</h3>
+        <p>Quick questions? Chat with our team</p>
+        <a href="#" class="cta-link blue-link">
+          Start Chat <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="cta-footer">
+      <span>📞 +60 12 345 6789</span>
+      <span>✉️ hello@urbanseaenviro.com</span>
+      <span>📍 Kuala Lumpur, Malaysia</span>
+    </div>
+
+  </div>
+</section>
+<!-- FOOTER -->
+{% include "partials/footer.html" %}
 
 </body>
 </html>
